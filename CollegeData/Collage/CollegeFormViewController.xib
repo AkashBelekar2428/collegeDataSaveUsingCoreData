@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CollegeFormViewController" customModule="CollegeData" customModuleProvider="target">
+            <connections>
+                <outlet property="txtCollageAddress" destination="o6h-pz-ghW" id="MSC-bA-oN6"/>
+                <outlet property="txtCollageCity" destination="eRR-Jt-ZQ9" id="sbu-PC-iMy"/>
+                <outlet property="txtCollageName" destination="T5H-2M-Qkn" id="yH6-Hw-I5i"/>
+                <outlet property="txtCollageUniversity" destination="xkh-Er-s4P" id="olW-3J-A0v"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nBI-OC-BGU">
+                    <rect key="frame" x="71.666666666666686" y="201" width="250" height="450"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rBI-kh-Xch">
+                            <rect key="frame" x="5" y="5" width="240" height="160"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Collage Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T5H-2M-Qkn">
+                                    <rect key="frame" x="0.0" y="0.0" width="240" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Collage City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eRR-Jt-ZQ9">
+                                    <rect key="frame" x="0.0" y="42" width="240" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Collage Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o6h-pz-ghW">
+                                    <rect key="frame" x="0.0" y="84" width="240" height="34"/>
+                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Collage University" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xkh-Er-s4P">
+                                    <rect key="frame" x="0.0" y="126" width="240" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBV-FC-JxP">
+                            <rect key="frame" x="92.333333333333343" y="405.66666666666663" width="65.333333333333343" height="34.333333333333314"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="SAVE"/>
+                            <connections>
+                                <action selector="saveData:" destination="-1" eventType="touchUpInside" id="2y1-T5-vta"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="OW8-j4-OLB"/>
+                        <constraint firstAttribute="trailing" secondItem="rBI-kh-Xch" secondAttribute="trailing" constant="5" id="QRs-Cv-OO4"/>
+                        <constraint firstItem="jBV-FC-JxP" firstAttribute="centerX" secondItem="nBI-OC-BGU" secondAttribute="centerX" id="ZeY-Xv-Qh7"/>
+                        <constraint firstAttribute="bottom" secondItem="jBV-FC-JxP" secondAttribute="bottom" constant="10" id="dQS-rO-JIJ"/>
+                        <constraint firstItem="rBI-kh-Xch" firstAttribute="top" secondItem="nBI-OC-BGU" secondAttribute="top" constant="5" id="qDu-Av-fzX"/>
+                        <constraint firstItem="rBI-kh-Xch" firstAttribute="leading" secondItem="nBI-OC-BGU" secondAttribute="leading" constant="5" id="wFr-rr-JfR"/>
+                        <constraint firstAttribute="height" constant="450" id="xfM-My-PF3"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TD2-h0-i05">
+                    <rect key="frame" x="0.0" y="69" width="100" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="7Zg-e3-Opu"/>
+                        <constraint firstAttribute="height" constant="35" id="bqX-AM-VbY"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Back"/>
+                    <connections>
+                        <action selector="backBtn:" destination="-1" eventType="touchUpInside" id="ENO-ki-YPz"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="TD2-h0-i05" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="PBK-ie-FyF"/>
+                <constraint firstItem="nBI-OC-BGU" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="es9-wY-6go"/>
+                <constraint firstItem="nBI-OC-BGU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mkb-nz-kc3"/>
+                <constraint firstItem="TD2-h0-i05" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="tfo-hM-jfo"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
