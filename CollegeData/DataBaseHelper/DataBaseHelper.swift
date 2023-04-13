@@ -75,4 +75,54 @@ class DataBaseHelper:NSManagedObject{
         }
         
     }
+    
+    //MARK: Student
+    //Save data using NSEntityDescription
+    func getStudentData(studentData:[String:String]){
+        
+        let student = NSEntityDescription.insertNewObject(forEntityName: "Student", into: context) as? Student
+        student!.name = studentData["studentName"]
+        student!.email = studentData["studentEmail"]
+        student!.phone = studentData["studentPhone"]
+        
+        do {
+            try context.save()
+        } catch  {
+            print(error.localizedDescription)
+        }
+    
+    }
+    //Fetch data using NSFetchRequest
+    
+    func getStudentData() -> [Student]{
+        var student = [Student]()
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Student")
+        
+        do {
+            student = try context.fetch(fetchRequest) as! [Student]
+        } catch  {
+            print("Not fetch yet..")
+        }
+        return student
+    }
+    
+    //Delete form tableview (row or indexPath)
+    
+    func deleteStudentData(index:Int) -> [Student]{
+        var studentData = getStudentData()
+        //delete from context
+        context.delete(studentData[index])
+        
+        //delete form array
+        studentData.remove(at: index)
+        
+        do {
+            try context.save()
+        } catch  {
+            print("Data not to be Deleted yet..")
+        }
+        
+        
+        return studentData
+    }
 }

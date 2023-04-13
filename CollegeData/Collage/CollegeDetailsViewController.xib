@@ -14,6 +14,7 @@
                 <outlet property="collegeCityLbl" destination="9gs-g0-oi6" id="IE7-Gd-MR0"/>
                 <outlet property="collegeNameLbl" destination="UAG-DX-hcX" id="RA7-TA-fWB"/>
                 <outlet property="collegeUniversityLbl" destination="a8Q-Hs-Gbk" id="kwB-Me-jcy"/>
+                <outlet property="studentLbl" destination="Iym-iD-kgk" id="G35-rR-s3Y"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -35,7 +36,7 @@
                     </connections>
                 </button>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="VEs-Vk-wgO">
-                    <rect key="frame" x="10" y="122.00000000000001" width="373" height="132.33333333333337"/>
+                    <rect key="frame" x="10" y="121.99999999999999" width="373" height="169.66666666666663"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="collegeName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAG-DX-hcX">
                             <rect key="frame" x="0.0" y="0.0" width="373" height="20.333333333333332"/>
@@ -57,6 +58,12 @@
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="collegeUniversity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8Q-Hs-Gbk">
                             <rect key="frame" x="0.0" y="112" width="373" height="20.333333333333343"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iym-iD-kgk">
+                            <rect key="frame" x="0.0" y="149.33333333333331" width="373" height="20.333333333333343"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>

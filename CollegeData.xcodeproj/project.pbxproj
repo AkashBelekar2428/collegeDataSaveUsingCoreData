@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE94210729E7FA8900E17CA4 /* StudentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94210529E7FA8900E17CA4 /* StudentListViewController.swift */; };
+		AE94210829E7FA8900E17CA4 /* StudentListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE94210629E7FA8900E17CA4 /* StudentListViewController.xib */; };
+		AE94210B29E7FA9D00E17CA4 /* StudentFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94210929E7FA9D00E17CA4 /* StudentFormViewController.swift */; };
+		AE94210C29E7FA9D00E17CA4 /* StudentFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE94210A29E7FA9D00E17CA4 /* StudentFormViewController.xib */; };
+		AE94211829E8033D00E17CA4 /* Student+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94211429E8033D00E17CA4 /* Student+CoreDataClass.swift */; };
+		AE94211929E8033D00E17CA4 /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94211529E8033D00E17CA4 /* Student+CoreDataProperties.swift */; };
+		AE94211C29E8074D00E17CA4 /* StudentListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94211A29E8074D00E17CA4 /* StudentListTVC.swift */; };
+		AE94211D29E8074D00E17CA4 /* StudentListTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE94211B29E8074D00E17CA4 /* StudentListTVC.xib */; };
 		AEB26E4629E6BE6D00EA754F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB26E4529E6BE6D00EA754F /* AppDelegate.swift */; };
 		AEB26E4829E6BE6D00EA754F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB26E4729E6BE6D00EA754F /* SceneDelegate.swift */; };
 		AEB26E4A29E6BE6D00EA754F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB26E4929E6BE6D00EA754F /* ViewController.swift */; };
@@ -48,6 +56,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE94210529E7FA8900E17CA4 /* StudentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListViewController.swift; sourceTree = "<group>"; };
+		AE94210629E7FA8900E17CA4 /* StudentListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentListViewController.xib; sourceTree = "<group>"; };
+		AE94210929E7FA9D00E17CA4 /* StudentFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentFormViewController.swift; sourceTree = "<group>"; };
+		AE94210A29E7FA9D00E17CA4 /* StudentFormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentFormViewController.xib; sourceTree = "<group>"; };
+		AE94211429E8033D00E17CA4 /* Student+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AE94211529E8033D00E17CA4 /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AE94211A29E8074D00E17CA4 /* StudentListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListTVC.swift; sourceTree = "<group>"; };
+		AE94211B29E8074D00E17CA4 /* StudentListTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentListTVC.xib; sourceTree = "<group>"; };
 		AEB26E4229E6BE6D00EA754F /* CollegeData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollegeData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB26E4529E6BE6D00EA754F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEB26E4729E6BE6D00EA754F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +117,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE94210D29E7FAA700E17CA4 /* Student */ = {
+			isa = PBXGroup;
+			children = (
+				AE94210529E7FA8900E17CA4 /* StudentListViewController.swift */,
+				AE94210629E7FA8900E17CA4 /* StudentListViewController.xib */,
+				AE94211A29E8074D00E17CA4 /* StudentListTVC.swift */,
+				AE94211B29E8074D00E17CA4 /* StudentListTVC.xib */,
+				AE94210929E7FA9D00E17CA4 /* StudentFormViewController.swift */,
+				AE94210A29E7FA9D00E17CA4 /* StudentFormViewController.xib */,
+			);
+			path = Student;
+			sourceTree = "<group>";
+		};
 		AEB26E3929E6BE6D00EA754F = {
 			isa = PBXGroup;
 			children = (
@@ -132,10 +161,13 @@
 				AEB26E5129E6BE6E00EA754F /* Assets.xcassets */,
 				AEB26E8829E6D2B200EA754F /* Collage+CoreDataClass.swift */,
 				AEB26E8929E6D2B200EA754F /* Collage+CoreDataProperties.swift */,
+				AE94211429E8033D00E17CA4 /* Student+CoreDataClass.swift */,
+				AE94211529E8033D00E17CA4 /* Student+CoreDataProperties.swift */,
 				AEB26E5329E6BE6E00EA754F /* LaunchScreen.storyboard */,
 				AEB26E5629E6BE6E00EA754F /* Info.plist */,
 				AEB26E4E29E6BE6D00EA754F /* CollegeData.xcdatamodeld */,
 				AEB26E8029E6C55F00EA754F /* Collage */,
+				AE94210D29E7FAA700E17CA4 /* Student */,
 			);
 			path = CollegeData;
 			sourceTree = "<group>";
@@ -292,9 +324,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE94210C29E7FA9D00E17CA4 /* StudentFormViewController.xib in Resources */,
 				AED632EF29E7C1C700AE5792 /* CollegeDetailsViewController.xib in Resources */,
 				AEB26E8F29E6D69500EA754F /* CollegeFormTVC.xib in Resources */,
 				AEB26E7F29E6BF6600EA754F /* CollegeFormViewController.xib in Resources */,
+				AE94210829E7FA8900E17CA4 /* StudentListViewController.xib in Resources */,
+				AE94211D29E8074D00E17CA4 /* StudentListTVC.xib in Resources */,
 				AEB26E5529E6BE6E00EA754F /* LaunchScreen.storyboard in Resources */,
 				AEB26E7B29E6BEA600EA754F /* CollegeViewController.xib in Resources */,
 				AEB26E5229E6BE6E00EA754F /* Assets.xcassets in Resources */,
@@ -323,9 +358,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEB26E8329E6C58800EA754F /* DataBaseHelper.swift in Sources */,
+				AE94211829E8033D00E17CA4 /* Student+CoreDataClass.swift in Sources */,
 				AEB26E8B29E6D2B200EA754F /* Collage+CoreDataProperties.swift in Sources */,
 				AEB26E8A29E6D2B200EA754F /* Collage+CoreDataClass.swift in Sources */,
 				AEB26E7E29E6BF6600EA754F /* CollegeFormViewController.swift in Sources */,
+				AE94210729E7FA8900E17CA4 /* StudentListViewController.swift in Sources */,
+				AE94211929E8033D00E17CA4 /* Student+CoreDataProperties.swift in Sources */,
+				AE94210B29E7FA9D00E17CA4 /* StudentFormViewController.swift in Sources */,
 				AED632EE29E7C1C700AE5792 /* CollegeDetailsViewController.swift in Sources */,
 				AEB26E4A29E6BE6D00EA754F /* ViewController.swift in Sources */,
 				AEB26E8E29E6D69500EA754F /* CollegeFormTVC.swift in Sources */,
@@ -333,6 +372,7 @@
 				AEB26E4629E6BE6D00EA754F /* AppDelegate.swift in Sources */,
 				AEB26E7A29E6BEA600EA754F /* CollegeViewController.swift in Sources */,
 				AEB26E4829E6BE6D00EA754F /* SceneDelegate.swift in Sources */,
+				AE94211C29E8074D00E17CA4 /* StudentListTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

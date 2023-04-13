@@ -12,6 +12,7 @@ class CollegeFormTVC: UITableViewCell {
     @IBOutlet weak var collegeCityLbl:UILabel!
     @IBOutlet weak var collegeAddressLbl:UILabel!
     @IBOutlet weak var collegeUniversityLbl:UILabel!
+  
     
     var college:Collage!{
         didSet{
