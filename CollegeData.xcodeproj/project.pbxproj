@@ -26,6 +26,8 @@
 		AEB26E8E29E6D69500EA754F /* CollegeFormTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB26E8C29E6D69500EA754F /* CollegeFormTVC.swift */; };
 		AEB26E8F29E6D69500EA754F /* CollegeFormTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEB26E8D29E6D69500EA754F /* CollegeFormTVC.xib */; };
 		AEB26E9229E6DF3000EA754F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB26E9129E6DF3000EA754F /* CoreData.framework */; };
+		AED632EE29E7C1C700AE5792 /* CollegeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED632EC29E7C1C700AE5792 /* CollegeDetailsViewController.swift */; };
+		AED632EF29E7C1C700AE5792 /* CollegeDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AED632ED29E7C1C700AE5792 /* CollegeDetailsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		AEB26E8C29E6D69500EA754F /* CollegeFormTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeFormTVC.swift; sourceTree = "<group>"; };
 		AEB26E8D29E6D69500EA754F /* CollegeFormTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollegeFormTVC.xib; sourceTree = "<group>"; };
 		AEB26E9129E6DF3000EA754F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AED632EC29E7C1C700AE5792 /* CollegeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeDetailsViewController.swift; sourceTree = "<group>"; };
+		AED632ED29E7C1C700AE5792 /* CollegeDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollegeDetailsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +164,8 @@
 				AEB26E7929E6BEA600EA754F /* CollegeViewController.xib */,
 				AEB26E7C29E6BF6600EA754F /* CollegeFormViewController.swift */,
 				AEB26E7D29E6BF6600EA754F /* CollegeFormViewController.xib */,
+				AED632EC29E7C1C700AE5792 /* CollegeDetailsViewController.swift */,
+				AED632ED29E7C1C700AE5792 /* CollegeDetailsViewController.xib */,
 				AEB26E8C29E6D69500EA754F /* CollegeFormTVC.swift */,
 				AEB26E8D29E6D69500EA754F /* CollegeFormTVC.xib */,
 			);
@@ -286,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AED632EF29E7C1C700AE5792 /* CollegeDetailsViewController.xib in Resources */,
 				AEB26E8F29E6D69500EA754F /* CollegeFormTVC.xib in Resources */,
 				AEB26E7F29E6BF6600EA754F /* CollegeFormViewController.xib in Resources */,
 				AEB26E5529E6BE6E00EA754F /* LaunchScreen.storyboard in Resources */,
@@ -319,6 +326,7 @@
 				AEB26E8B29E6D2B200EA754F /* Collage+CoreDataProperties.swift in Sources */,
 				AEB26E8A29E6D2B200EA754F /* Collage+CoreDataClass.swift in Sources */,
 				AEB26E7E29E6BF6600EA754F /* CollegeFormViewController.swift in Sources */,
+				AED632EE29E7C1C700AE5792 /* CollegeDetailsViewController.swift in Sources */,
 				AEB26E4A29E6BE6D00EA754F /* ViewController.swift in Sources */,
 				AEB26E8E29E6D69500EA754F /* CollegeFormTVC.swift in Sources */,
 				AEB26E5029E6BE6D00EA754F /* CollegeData.xcdatamodeld in Sources */,

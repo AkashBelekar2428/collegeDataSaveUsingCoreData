@@ -44,4 +44,35 @@ class DataBaseHelper:NSManagedObject{
         return college
         
     }
+    //Delete tableViewdata on row
+    func deleteCollageData(index:Int) -> [Collage]{
+        var collage = getCollageData()
+        context.delete(collage[index]) //delete from coredata
+        collage.remove(at: index) //delete from array (collage)
+        
+        do {
+            try context.save()
+        } catch let error {
+            print("error",error.localizedDescription)
+        }
+        return collage
+        
+    }
+    
+    //edit data
+    
+    func editCollegeData(collegeData:[String:String], index:Int){
+        var college = getCollageData()
+        college[index].name = collegeData["collageName"]
+        college[index].city = collegeData["collageCity"]
+        college[index].address = collegeData["collageAddress"]
+        college[index].university = collegeData["collageUniversity"]
+        
+        do {
+            try context.save()
+        } catch  {
+            print("error in edit data")
+        }
+        
+    }
 }

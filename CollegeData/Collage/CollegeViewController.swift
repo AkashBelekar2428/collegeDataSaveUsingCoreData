@@ -43,6 +43,27 @@ extension CollegeViewController:UITableViewDataSource,UITableViewDelegate{
         cell.college = collegeModel[indexPath.row]
         return cell
     }
+    //delete row methods
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete{
+            
+            self.collegeModel = DataBaseHelper.sharedInstance.deleteCollageData(index: indexPath.row)
+            self.clgListTbl.deleteRows(at: [indexPath], with: .automatic)
+            
+        }
+    
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = CollegeDetailsViewController()
+        vc.modalPresentationStyle = .fullScreen
+        vc.index = indexPath.row
+        vc.collegeDetails = collegeModel[indexPath.row]
+        present(vc, animated: true)
+    }
     
     
 }

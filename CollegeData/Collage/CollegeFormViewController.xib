@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CollegeFormViewController" customModule="CollegeData" customModuleProvider="target">
             <connections>
+                <outlet property="saveBtn" destination="jBV-FC-JxP" id="yPO-Yi-g9a"/>
                 <outlet property="txtCollageAddress" destination="o6h-pz-ghW" id="MSC-bA-oN6"/>
                 <outlet property="txtCollageCity" destination="eRR-Jt-ZQ9" id="sbu-PC-iMy"/>
                 <outlet property="txtCollageName" destination="T5H-2M-Qkn" id="yH6-Hw-I5i"/>
